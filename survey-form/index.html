@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+		<meta charset="utf-8" />
+		<meta title="Survey Form" />
+	</head>
+
+	<body>
+		<header>
+			<h1>User Study for Modular Arithmetic Workbench</h1>
+			<div class="description">
+				<p>Dear Participant,</p>
+				<p>
+					Thank you for agreeing to participate in our study aimed at assessing the effectiveness of an <a id="tool-link" href="https://a-majumdar.github.io/diss/">educational tool</a> focusing on
+					specific concepts in number theory. Your feedback is valuable in helping us understand how well the tool facilitates learning and comprehension of these important mathematical concepts
+					through visual demonstration.
+				</p>
+				<p>
+					This questionnaire should take no more than 5 minutes and consists of several sections designed to gather information about your background knowledge of number theory, your experience with
+					studying mathematics, and your opinions on the educational tool. Your responses will remain anonymous and will be used solely for research purposes.
+				</p>
+				<p>
+					Please take your time to answer the questions thoughtfully and honestly. Your feedback will provide valuable insights that will help us improve the educational tool and enhance the learning
+					experience for future users.
+				</p>
+				<p>Thank you for your participation!</p>
+				<p>Sincerely,</p>
+				<p>Ananya Majumdar</p>
+			</div>
+		</header>
+		<div class="form">
+			<form method="post" action="" id="survey-form">
+				<fieldset>
+					<legend>Demographic Information</legend>
+					<label id="name-label" class="demographic" for="name"> Full Name: <input type="text" class="demographic" id="name" required placeholder="Your Name" /></label>
+					<label id="email-label" class="demographic" for="email"> Email Address: <input type="email" class="demographic" id="email" required placeholder="Email Address" /></label>
+					<label id="number-label" class="demographic" for="number"> Age: <input type="number" class="demographic" id="number" placeholder="10" min="10" max="120" /></label>
+					<label id="education-label" class="demographic" for="education">
+						Highest Level of Education:
+						<select id="education" class="demographic" name="education" required>
+							<option value="">(Select one)</option>
+							<option value="0">GCSEs or Equivalent</option>
+							<option value="1">A-Levels, BTECs, or Equivalent</option>
+							<option value="2">College or Associate's Degree</option>
+							<option value="3">Bachelor's Degree</option>
+							<option value="4">Master's Degree</option>
+							<option value="5">Doctorate or Ph.D.</option>
+							<option value="9">Other</option>
+						</select>
+					</label>
+					<label id="occupation-label" class="demographic" for="occupation">
+						Occupation (or major, if currently studying): <input type="text" class="demographic" id="occupation" required placeholder="Your Occupation or Major" />
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Number Theory Background</legend>
+					<p class="background question">How familiar are you with concepts in Number Theory?</p>
+					<label class="background answer" for="b1-1"><input type="radio" id="b1-1" class="background first" name="familiar" />Not at all familiar</label>
+					<label class="background answer" for="b1-2"><input type="radio" id="b1-2" class="background second" name="familiar" />Somewhat familiar</label>
+					<label class="background answer" for="b1-3"><input type="radio" id="b1-3" class="background third" name="familiar" />Very familiar</label>
+
+					<p class="background question">How confident are you with concepts in Number Theory?</p>
+					<label class="background answer" for="b2-1"><input type="radio" id="b2-1" class="background first" name="confident" />Not at all familiar</label>
+					<label class="background answer" for="b2-2"><input type="radio" id="b2-2" class="background second" name="confident" />Somewhat familiar</label>
+					<label class="background answer" for="b2-3"><input type="radio" id="b2-3" class="background third" name="confident" />Very familiar</label>
+				</fieldset>
+				<fieldset>
+					<legend>Learning Outcomes</legend>
+				</fieldset>
+				<fieldset>
+					<legend>Overall Feedback</legend>
+					<p>Would you recommend this tool to a friend studying number theory?</p>
+					<label for="f1-1"><input type="radio" name="recommend" id="yes" value="yes" />Yes</label>
+					<label for="f1-2"><input type="radio" name="recommend" id="maybe" value="maybe" />Maybe</label>
+					<label for="f1-3"><input type="radio" name="recommend" id="no" value="no" />No</label>
+
+                    <p>Please let us know if you have any other feedback or suggestions:</p>
+                    <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+				</fieldset>
+
+				<input type="submit" value="Submit" />
+			</form>
+			<footer>
+				<p>Created by <a href="https://github.com/a-majumdar">Ananya Majumdar</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
