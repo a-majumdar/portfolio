@@ -8,11 +8,11 @@
 
 	<body>
 		<header>
-			<h1>User Study for Modular Arithmetic Workbench</h1>
+			<h1>User Study: Modular Arithmetic Workbench</h1>
 			<div class="description">
 				<p>Dear Participant,</p>
 				<p>
-					Thank you for agreeing to participate in our study aimed at assessing the effectiveness of an <a id="tool-link" href="https://a-majumdar.github.io/diss/">educational tool</a> focusing on
+					Thank you for agreeing to participate in this study for assessing the effectiveness of an <a id="tool-link" href="https://a-majumdar.github.io/diss/">educational tool</a> focusing on
 					specific concepts in number theory. Your feedback is valuable in helping us understand how well the tool facilitates learning and comprehension of these important mathematical concepts
 					through visual demonstration.
 				</p>
@@ -33,12 +33,12 @@
 			<form method="post" action="" id="survey-form">
 				<fieldset>
 					<legend>Demographic Information</legend>
-					<label id="name-label" class="demographic" for="name"> Full Name: <input type="text" class="demographic" id="name" required placeholder="Your Name" /></label>
-					<label id="email-label" class="demographic" for="email"> Email Address: <input type="email" class="demographic" id="email" required placeholder="Email Address" /></label>
-					<label id="number-label" class="demographic" for="number"> Age: <input type="number" class="demographic" id="number" placeholder="10" min="10" max="120" /></label>
-					<label id="education-label" class="demographic" for="education">
+					<label id="name-label" class="demographic question" for="name"> Full Name: <input type="text" class="demographic answer" id="name" required placeholder="Your Name" /></label>
+					<label id="email-label" class="demographic question" for="email"> Email Address: <input type="email" class="demographic answer" id="email" required placeholder="Email Address" /></label>
+					<label id="number-label" class="demographic question" for="number"> Age: <input type="number" class="demographic answer" id="number" placeholder="10" min="10" max="120" /></label>
+					<label id="education-label" class="demographic question" for="dropdown">
 						Highest Level of Education:
-						<select id="education" class="demographic" name="education" required>
+						<select id="dropdown" class="demographic answer" name="education" required>
 							<option value="">(Select one)</option>
 							<option value="0">GCSEs or Equivalent</option>
 							<option value="1">A-Levels, BTECs, or Equivalent</option>
@@ -56,27 +56,53 @@
 				<fieldset>
 					<legend>Number Theory Background</legend>
 					<p class="background question">How familiar are you with concepts in Number Theory?</p>
-					<label class="background answer" for="b1-1"><input type="radio" id="b1-1" class="background first" name="familiar" />Not at all familiar</label>
-					<label class="background answer" for="b1-2"><input type="radio" id="b1-2" class="background second" name="familiar" />Somewhat familiar</label>
-					<label class="background answer" for="b1-3"><input type="radio" id="b1-3" class="background third" name="familiar" />Very familiar</label>
+					<div class="container">
+						<label class="background answer" for="b1-1"><input type="radio" id="b1-1" class="background first" name="familiar" />Not at all familiar</label>
+						<label class="background answer" for="b1-2"><input type="radio" id="b1-2" class="background second" name="familiar" />Somewhat familiar</label>
+						<label class="background answer" for="b1-3"><input type="radio" id="b1-3" class="background third" name="familiar" />Very familiar</label>
+					</div>
 
 					<p class="background question">How confident are you with concepts in Number Theory?</p>
-					<label class="background answer" for="b2-1"><input type="radio" id="b2-1" class="background first" name="confident" />Not at all familiar</label>
-					<label class="background answer" for="b2-2"><input type="radio" id="b2-2" class="background second" name="confident" />Somewhat familiar</label>
-					<label class="background answer" for="b2-3"><input type="radio" id="b2-3" class="background third" name="confident" />Very familiar</label>
+					<div class="container">
+						<label class="background answer" for="b2-1"><input type="radio" id="b2-1" class="background first" name="confident" />Not at all familiar</label>
+						<label class="background answer" for="b2-2"><input type="radio" id="b2-2" class="background second" name="confident" />Somewhat familiar</label>
+						<label class="background answer" for="b2-3"><input type="radio" id="b2-3" class="background third" name="confident" />Very familiar</label>
+					</div>
+					<p class="background question">Which methods do you usually use to study? Please select all that apply.</p>
+					<div class="study-check">
+						<label class="background answer" for="study"><input type="checkbox" id="study" class="background answer" name="study" value="books" />Books</label>
+					</div>
+					<div class="study-check">
+						<label class="background answer" for="study"><input type="checkbox" id="study" class="background answer" name="study" value="videos" />Videos</label>
+					</div>
+					<div class="study-check">
+						<label class="background answer" for="study"><input type="checkbox" id="study" class="background answer" name="study" value="lectures" />Lectures</label>
+					</div>
+					<div class="study-check">
+						<label class="background answer" for="study"><input type="checkbox" id="study" class="background answer" name="study" value="tutorials" />Tutorials</label>
+					</div>
+					<div class="study-check">
+						<label class="background answer" for="study"><input type="checkbox" id="study" class="background answer" name="study" value="online" />Online Resources</label>
+					</div>
+					<div class="study-check">
+						<label class="background answer" for="study"><input type="checkbox" id="study" class="background answer" name="study" value="other" />Other</label>
+					</div>
 				</fieldset>
 				<fieldset>
 					<legend>Learning Outcomes</legend>
+					<p class="learning question"></p>
 				</fieldset>
 				<fieldset>
 					<legend>Overall Feedback</legend>
-					<p>Would you recommend this tool to a friend studying number theory?</p>
-					<label for="f1-1"><input type="radio" name="recommend" id="yes" value="yes" />Yes</label>
-					<label for="f1-2"><input type="radio" name="recommend" id="maybe" value="maybe" />Maybe</label>
-					<label for="f1-3"><input type="radio" name="recommend" id="no" value="no" />No</label>
+					<p class="feedback question">Would you recommend this tool to a friend studying number theory?</p>
+					<div class="container">
+						<label class="feedback answer" for="f1-1"><input type="radio" name="recommend" class="feedback first" id="yes" value="yes" />Yes</label>
+						<label class="feedback answer" for="f1-2"><input type="radio" name="recommend" class="feedback second" id="maybe" value="maybe" />Maybe</label>
+						<label class="feedback answer" for="f1-3"><input type="radio" name="recommend" class="feedback third" id="no" value="no" />No</label>
+					</div>
 
-                    <p>Please let us know if you have any other feedback or suggestions:</p>
-                    <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+					<p class="feedback question">Please let us know if you have any other feedback or suggestions:</p>
+					<textarea class="feedback answer" id="comments" placeholder="Enter your comments here..."></textarea>
 				</fieldset>
 
 				<input type="submit" value="Submit" />
