@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <label class="switch">
+            <input type="checkbox" id="color-blind-toggle">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#crafts">Crafting Projects</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="threejs-animation"></div>
+            <!-- Projects will be listed here -->
+        </section>
+        <section id="cv">
+            <h2>CV</h2>
+            <!-- CV details will be listed here -->
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <!-- Blog posts will be listed here -->
+        </section>
+        <section id="crafts">
+            <h2>Crafting Projects</h2>
+            <div id="image-gallery">
+                <!-- Images will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="threejs_script.js"></script>
+</body>
+</html>
