@@ -269,7 +269,7 @@ body.color-blind-mode main {
 }
 
 .work-history-box {
-    background-color: #f4ecd8;
+    background-color: #f4ecd892;
     border: 1px solid #ddd;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -292,3 +292,14 @@ body.color-blind-mode main {
         flex: 1 1 calc(100% - 40px);
     }
 }
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.logo-container img {
+    max-height: 50px;
+    max-height: 50px;
+} 
