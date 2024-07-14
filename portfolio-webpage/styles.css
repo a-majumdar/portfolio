@@ -245,3 +245,50 @@ body.color-blind-mode main {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.cv-section {
+    margin-bottom: 20px;
+}
+
+.cv-section h3 {
+    margin-top: 0;
+}
+
+.cv-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.cv-section p {
+    margin: 0.5em 0;
+}
+
+.work-history-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-history-box {
+    background-color: #f4ecd8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.work-history-box h4 {
+    margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+    .work-history-box {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 800px) {
+    .work-history-box {
+        flex: 1 1 calc(100% - 40px);
+    }
+}
