@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Majumdar</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,6 +13,7 @@
         <label class="switch">
             <input type="checkbox" id="color-blind-toggle">
             <span class="slider round"></span>
+            <i class="fas fa-eye" id="colorBlidToggle"></i>
         </label>
     </header>
     <div id="landing">
@@ -38,9 +40,94 @@
             <!-- Projects will be listed here -->
         </section>
         <section id="cv">
-            <h2>CV</h2>
-            <!-- CV details will be listed here -->
-        </section>
+            <h2>Curriculum Vitae</h2>
+            <div class="cv-section">
+                <h3>Professional Summary</h3>
+                <p>Computer Science graduate with a robust background in networking technologies and security fundamentals. Internship experience in cyber security engineering and compliance, coupled with strong academic achievements and practical hands-on projects. Adept at collaborating across cross-functional teams, with a strong focus on continuous professional development. Consistently demonstrating innovative problem-solving and adaptability, underscored by exposure to various tools and technologies.</p>
+            </div>
+            <div class="cv-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Languages: English (native), Bengali (mothertongue), Spanish (beginner)</li>
+                    <li>Programming: JavaScript, HTML5, CSS3, C/C++, Python, Haskell, Java, Bash</li>
+                    <li>Tools: Git, Wireshark</li>
+                    <li>Full UK driving license</li>
+                    <li>5x certifications issued by IBM</li>
+                    <li>CC issued by (ISC)2 in Feb 2024</li>
+                    <li>Current and full DBS check</li>
+                </ul>
+            </div>
+            <div class="cv-section">
+                <h3>Education</h3>
+                <p><strong>University of Edinburgh, Edinburgh, UK</strong><br>
+                BSc (Hons) Computer Science, 2:1 (2018 – 2023)<br>
+                Honours’ project supervised by Dr John Longley: A focus on the mathematical number theory underpinning many cryptographic systems through the development of a visualisation tool for higher education.</p>
+                <p><strong>Bury Grammar School Girls, Greater Manchester, UK</strong><br>
+                A-Levels: Computer Science (A*), Mathematics (A*), Further Mathematics (A), Physics (B)<br>
+                GCSEs: A*s ×8, As ×3</p>
+            </div>
+            <div class="cv-section">
+                <h3>Relevant Experience</h3>
+                <p><strong>Study Mind, Manchester, UK</strong><br>
+                Private Computer Science Tutor - GCSE, A-Level (11/2023 – Present)</p>
+                <ul>
+                    <li>Enhanced student performance by tailoring lessons to individual learning styles through clear and engaging communication styles as well as a diagnostic approach to identifying student weaknesses.</li>
+                    <li>Provided targeted support and continuous feedback, boosting student confidence and skills in computer science.</li>
+                    <li>Implemented innovative teaching techniques to enhance learning engagement.</li>
+                    <li>Developed custom educational materials, ensuring thorough coverage of syllabus.</li>
+                </ul>
+                <p><strong>CompSoc Edinburgh, University of Edinburgh, UK</strong><br>
+                Executive Secretary (03/2020 – 04/2021)</p>
+                <ul>
+                    <li>Delivered a livestream talk on ‘bio-inspired computing’ to an audience of 50+, showcasing expertise and engaging the community.</li>
+                    <li>Initiated and led the ‘Academic Families’ programme, creating a nurturing environment for new students.</li>
+                    <li>Drafted agendas and took minutes for all meetings, ensuring seamless communication and efficient decision-making processes.</li>
+                    <li>Streamlined meeting documentation and event planning, enhancing organizational efficiency and sponsor relations.</li>
+                    <li>Facilitated partnerships with local and international sponsors, enhancing event quality and expanding networking opportunities.</li>
+                </ul>
+                <p><strong>IBM (Remote), Hursley, UK</strong><br>
+                Kubernetes Security & Compliance Analyst (06/2020 – 08/2020)</p>
+                <ul>
+                    <li>Enhanced my communication skills by leveraging advanced storytelling and written skills.</li>
+                    <li>Refined Agile backlog item tracking tools, enhancing workflows for internationally-spread teams.</li>
+                    <li>Analyzed company-wide tools for assessing non-compliance and associated risks, and communicated findings via white paper developed with colleagues.</li>
+                    <li>Proposed an innovative system to unify compliance operations through a matrix-based model.</li>
+                </ul>
+                <p><strong>init.g Conference @ Google, London, UK</strong><br>
+                Delegate (11/2019)</p>
+                <ul>
+                    <li>Represented my university at Google’s cybersecurity workshop, developing advanced defence techniques in binary vulnerabilities and XSS.</li>
+                    <li>Completed OverTheWire wargames under expert guidance.</li>
+                    <li>Fostered strong professional networks with industry leaders, sharing knowledge and strategies.</li>
+                </ul>
+                <p><strong>QA, Cheltenham, UK</strong><br>
+                IT Summer School Delegate (07/2019 – 08/2019)</p>
+                <ul>
+                    <li>Developed key skills in cyber security such as data collection and examination, collaboration, and reverse engineering.</li>
+                    <li>Wrote and presented a talk to 70 delegates and industry visitors on the fundamentals of natural computation, bio-inspired computing, and their implications for daily life.</li>
+                    <li>Tools: Wireshark (data capture and examination, network protocol analysis, intrusion/exfiltration detection), Metasploit (penetration testing, vulnerability management, reverse engineering), Nmap (security auditing, networking data collection).</li>
+                </ul>
+                <p><strong>Web Applications UK, Oldham, UK</strong><br>
+                Software Engineer (07/2017 – 08/2017)</p>
+                <ul>
+                    <li>Enhanced existing software by correcting errors, upgrading interfaces and improving performance.</li>
+                    <li>Developed new solutions with iterative design techniques, boosting project efficiency.</li>
+                    <li>Communicated regularly with customers on project status, proposals and technical issues.</li>
+                    <li>Analysed system capabilities to provide detailed technical feedback and improvements.</li>
+                    <li>Streamlined data storage processes, refining backup protocols and mechanisms.</li>
+                    <li>Coordinated with team members to deliver high-quality software solutions under tight deadlines.</li>
+                    <li>Prepared detailed reports concerning project specifications and activities.</li>
+                </ul>
+            </div>
+            <div class="cv-section">
+                <h3>Other Work History</h3>
+                <p><strong>Fraser Hart, Edinburgh, UK</strong><br>
+                Sales Consultant (06/2023 – 08/2023)</p>
+                <p><strong>Next PLC, Edinburgh, UK</strong><br>
+                Part-Time Sales Consultant (08/2022 – 06/2023)</p>
+                <p><strong>British Heart Foundation D S Promotions, Manchester, UK</strong><br>
+                Sales Representative (06/2021 – 07/2021)</p>
+            </div>        </section>
         <section id="blog">
             <h2>Blog</h2>
             <!-- Blog posts will be listed here -->

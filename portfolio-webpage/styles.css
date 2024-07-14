@@ -113,7 +113,7 @@ nav ul li:last-child a {
 main {
     display: none; /* Hidden by default */
     padding: 20px;
-    background: rgba(244, 236, 216, 0.9); /* Slightly transparent background for main content */
+    background: rgba(244, 236, 216, 0.2); /* Slightly transparent background for main content */
 }
 
 main > section {
@@ -144,13 +144,13 @@ h2 {
     border-radius: 5px; /* Rounded corners for images */
 }
 
-/* Switch style */
+/* CB toggle style */
 .switch {
     position: absolute;
     top: 20px;
     right: 20px;
     display: inline-block;
-    width: 60px;
+    width: 90px;
     height: 34px;
 }
 
@@ -189,7 +189,16 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(56px); /* switch width (90) - slider width (26) - padding (4 * 2) = 56 */
+}
+
+.switch i {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 body.color-blind-mode {
@@ -235,3 +244,4 @@ body.color-blind-mode nav {
 body.color-blind-mode main {
     background: rgba(255, 255, 255, 0.2);
 }
+
